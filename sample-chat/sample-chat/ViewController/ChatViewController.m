@@ -238,7 +238,7 @@ UIActionSheetDelegate
         QBUUser *user = [[QBUUser alloc]init];
         user.ID = opponentID.longLongValue;
         user.fullName = @"sadsd";
-        QBUUser* opponentUser =  user;//[[ServicesManager instance].usersService.usersMemoryStorage userWithID:[opponentID unsignedIntegerValue]];
+        QBUUser* opponentUser =  [Storage userFromId:opponentID.longLongValue];//user;//[[ServicesManager instance].usersService.usersMemoryStorage userWithID:[opponentID unsignedIntegerValue]];
         NSAssert(opponentUser, @"opponent must exists");
         self.opponentUser = opponentUser;
         self.title = self.opponentUser.fullName;

@@ -139,8 +139,7 @@ QMChatConnectionDelegate
     
 }
 
-- (NSArray *)dialogs
-{
+- (NSArray *)dialogs {
     // Retrieving dialogs sorted by updatedAt date from memory storage.
 	return [ServicesManager.instance.chatService.dialogsMemoryStorage dialogsSortByUpdatedAtWithAscending:NO];
 }
@@ -148,14 +147,12 @@ QMChatConnectionDelegate
 #pragma mark
 #pragma mark UITableViewDelegate & UITableViewDataSource
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSLog(@"%@", self.dialogs);
 	return self.dialogs.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     DialogTableViewCell *cell = (DialogTableViewCell *) [tableView dequeueReusableCellWithIdentifier:@"ChatRoomCellIdentifier"];
     
     QBChatDialog *chatDialog = self.dialogs[indexPath.row];
@@ -165,7 +162,7 @@ QMChatConnectionDelegate
         case QBChatDialogTypePrivate: {
             cell.lastMessageTextLabel.text = chatDialog.lastMessageText;
             QBUUser *recipient = [Storage userFromId:chatDialog.recipientID];//[[ServicesManager instance].usersService.usersMemoryStorage userWithID:chatDialog.recipientID];
-            cell.dialogNameLabel.text = recipient.login == nil ? (recipient.fullName == nil ? [NSString stringWithFormat:@"%lu", (unsigned long)recipient.ID] : recipient.fullName) : recipient.login;
+            cell.dialogNameLabel.text = recipient.fullName == nil ? [NSString stringWithFormat:@"%lu", (unsigned long)recipient.ID] : recipient.fullName;
             cell.dialogImageView.image = [UIImage imageNamed:@"chatRoomIcon"];
         }
             break;
@@ -219,35 +216,28 @@ QMChatConnectionDelegate
                                                     }];
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-	
 	QBChatDialog *dialog = self.dialogs[indexPath.row];
-
     [self performSegueWithIdentifier:kGoToChatSegueIdentifier sender:dialog];
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 64.0f;
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:kGoToChatSegueIdentifier]) {
         ChatViewController* chatViewController = segue.destinationViewController;
         chatViewController.dialog = sender;
     }
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     return YES;
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         QBChatDialog *chatDialog = self.dialogs[indexPath.row];
 
@@ -259,8 +249,6 @@ QMChatConnectionDelegate
             }
         }
         chatDialog.occupantIDs = [occupantsWithoutCurrentUser copy];
-        
-        
         [SVProgressHUD showWithStatus:@"Leaving dialog..." maskType:SVProgressHUDMaskTypeClear];
         
         if (chatDialog.type == QBChatDialogTypeGroup) {
@@ -316,30 +304,25 @@ QMChatConnectionDelegate
 
 #pragma mark - QMChatConnectionDelegate
 
-- (void)chatServiceChatDidConnect:(QMChatService *)chatService
-{
+- (void)chatServiceChatDidConnect:(QMChatService *)chatService {
     [SVProgressHUD showSuccessWithStatus:@"Chat connected!" maskType:SVProgressHUDMaskTypeClear];
     [self loadDialogs];
 }
 
-- (void)chatServiceChatDidReconnect:(QMChatService *)chatService
-{
+- (void)chatServiceChatDidReconnect:(QMChatService *)chatService {
     [SVProgressHUD showSuccessWithStatus:@"Chat reconnected!" maskType:SVProgressHUDMaskTypeClear];
     [self loadDialogs];
 }
 
-- (void)chatServiceChatDidAccidentallyDisconnect:(QMChatService *)chatService
-{
+- (void)chatServiceChatDidAccidentallyDisconnect:(QMChatService *)chatService {
     [SVProgressHUD showErrorWithStatus:@"Chat disconnected!"];
 }
 
-- (void)chatServiceChatDidNotLoginWithError:(NSError *)error
-{
+- (void)chatServiceChatDidNotLoginWithError:(NSError *)error {
     [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"Did not login with error: %@", [error description]]];
 }
 
-- (void)chatServiceChatDidFailWithStreamError:(NSError *)error
-{
+- (void)chatServiceChatDidFailWithStreamError:(NSError *)error {
     [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"Chat failed with error: %@", [error description]]];
 }
 

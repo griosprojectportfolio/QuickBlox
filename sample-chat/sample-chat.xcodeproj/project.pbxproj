@@ -136,15 +136,15 @@
 		1402B6991B14BF350069E3A4 /* UserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
 		1402B69B1B14BFBA0069E3A4 /* CornerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CornerView.h; sourceTree = "<group>"; };
 		1402B69C1B14BFBA0069E3A4 /* CornerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CornerView.m; sourceTree = "<group>"; };
-		1402B6A61B14C7340069E3A4 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		1402B6A71B14C7340069E3A4 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		1402B6A61B14C7340069E3A4 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
+		1402B6A71B14C7340069E3A4 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
 		143181731B18714B001A933D /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		143181771B1882EC001A933D /* NewDialogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDialogTableViewController.h; sourceTree = "<group>"; };
 		143181781B1882EC001A933D /* NewDialogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDialogTableViewController.m; sourceTree = "<group>"; };
 		1480E08D1B25DB6600DD6B7C /* DialogTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogTableViewCell.h; sourceTree = "<group>"; };
 		1480E08E1B25DB6600DD6B7C /* DialogTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialogTableViewCell.m; sourceTree = "<group>"; };
-		1485D5FB1B25E60A00D26B2A /* EditDialogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditDialogTableViewController.h; sourceTree = "<group>"; };
-		1485D5FC1B25E60A00D26B2A /* EditDialogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditDialogTableViewController.m; sourceTree = "<group>"; };
+		1485D5FB1B25E60A00D26B2A /* EditDialogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditDialogTableViewController.h; path = ../EditDialogTableViewController.h; sourceTree = "<group>"; };
+		1485D5FC1B25E60A00D26B2A /* EditDialogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditDialogTableViewController.m; path = ../EditDialogTableViewController.m; sourceTree = "<group>"; };
 		1C300553BEFAEB30F2850033 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5857DCD01BD91F3700AB2D53 /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quickblox.framework; path = ../Framework/Quickblox.framework; sourceTree = "<group>"; };
 		86104A1C1B0B5E1900464D52 /* ServicesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesManager.h; sourceTree = "<group>"; };
@@ -161,10 +161,10 @@
 		86872E821BAF55A300BE9F23 /* NotificationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
 		86A716631B9EF0440019C42A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		86A716661B9EF0820019C42A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		86EE31B11B26EB6700B8A383 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
-		86EE31B21B26EB6700B8A383 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
-		86EE31B51B270B7F00B8A383 /* DialogInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogInfoTableViewController.h; sourceTree = "<group>"; };
-		86EE31B61B270B7F00B8A383 /* DialogInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialogInfoTableViewController.m; sourceTree = "<group>"; };
+		86EE31B11B26EB6700B8A383 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatViewController.h; path = ../ChatViewController.h; sourceTree = "<group>"; };
+		86EE31B21B26EB6700B8A383 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatViewController.m; path = ../ChatViewController.m; sourceTree = "<group>"; };
+		86EE31B51B270B7F00B8A383 /* DialogInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DialogInfoTableViewController.h; path = ../DialogInfoTableViewController.h; sourceTree = "<group>"; };
+		86EE31B61B270B7F00B8A383 /* DialogInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DialogInfoTableViewController.m; path = ../DialogInfoTableViewController.m; sourceTree = "<group>"; };
 		B28710F05CC3FC9C8169A7CA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		BFBD3C931832CF30009D090B /* sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound.mp3; sourceTree = "<group>"; };
 		BFE6FB72180E8EF100E64AC4 /* samplechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = samplechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -224,6 +224,8 @@
 			children = (
 				0A1508541C31359A00EE45B3 /* SignUpViewController.h */,
 				0A1508551C31359A00EE45B3 /* SignUpViewController.m */,
+				1402B6A61B14C7340069E3A4 /* LoginViewController.h */,
+				1402B6A71B14C7340069E3A4 /* LoginViewController.m */,
 				0A1508561C31359A00EE45B3 /* UsersPaginator.h */,
 				0A1508571C31359A00EE45B3 /* UsersPaginator.m */,
 			);
@@ -337,6 +339,37 @@
 			);
 			name = Reachability;
 			path = Utils/Reachability;
+			sourceTree = "<group>";
+		};
+		0ADE21921C33DC0F00EA2D1F /* Customize Module */ = {
+			isa = PBXGroup;
+			children = (
+				BFE6FBCA180EA2F300E64AC4 /* DialogsViewController.h */,
+				BFE6FBCB180EA2F300E64AC4 /* DialogsViewController.m */,
+				143181771B1882EC001A933D /* NewDialogTableViewController.h */,
+				143181781B1882EC001A933D /* NewDialogTableViewController.m */,
+				0A68FD1F1C33D5BB0021129F /* FindFriendViewController.h */,
+				0A68FD201C33D5BB0021129F /* FindFriendViewController.m */,
+				0A68FD211C33D5BB0021129F /* RequestViewController.h */,
+				0A68FD221C33D5BB0021129F /* RequestViewController.m */,
+				0A68FD231C33D5BB0021129F /* SettingViewController.h */,
+				0A68FD241C33D5BB0021129F /* SettingViewController.m */,
+			);
+			name = "Customize Module";
+			sourceTree = "<group>";
+		};
+		0ADE21931C33DC5700EA2D1F /* Default Module */ = {
+			isa = PBXGroup;
+			children = (
+				1485D5FB1B25E60A00D26B2A /* EditDialogTableViewController.h */,
+				1485D5FC1B25E60A00D26B2A /* EditDialogTableViewController.m */,
+				86EE31B11B26EB6700B8A383 /* ChatViewController.h */,
+				86EE31B21B26EB6700B8A383 /* ChatViewController.m */,
+				86EE31B51B270B7F00B8A383 /* DialogInfoTableViewController.h */,
+				86EE31B61B270B7F00B8A383 /* DialogInfoTableViewController.m */,
+			);
+			name = "Default Module";
+			path = UserModule;
 			sourceTree = "<group>";
 		};
 		8614B8DA1B8205D400DBB753 /* DataSources */ = {
@@ -460,24 +493,8 @@
 			isa = PBXGroup;
 			children = (
 				0A15084F1C31359A00EE45B3 /* UserModule */,
-				BFE6FBCA180EA2F300E64AC4 /* DialogsViewController.h */,
-				BFE6FBCB180EA2F300E64AC4 /* DialogsViewController.m */,
-				1402B6A61B14C7340069E3A4 /* LoginViewController.h */,
-				1402B6A71B14C7340069E3A4 /* LoginViewController.m */,
-				143181771B1882EC001A933D /* NewDialogTableViewController.h */,
-				143181781B1882EC001A933D /* NewDialogTableViewController.m */,
-				1485D5FB1B25E60A00D26B2A /* EditDialogTableViewController.h */,
-				1485D5FC1B25E60A00D26B2A /* EditDialogTableViewController.m */,
-				86EE31B11B26EB6700B8A383 /* ChatViewController.h */,
-				86EE31B21B26EB6700B8A383 /* ChatViewController.m */,
-				86EE31B51B270B7F00B8A383 /* DialogInfoTableViewController.h */,
-				86EE31B61B270B7F00B8A383 /* DialogInfoTableViewController.m */,
-				0A68FD1F1C33D5BB0021129F /* FindFriendViewController.h */,
-				0A68FD201C33D5BB0021129F /* FindFriendViewController.m */,
-				0A68FD211C33D5BB0021129F /* RequestViewController.h */,
-				0A68FD221C33D5BB0021129F /* RequestViewController.m */,
-				0A68FD231C33D5BB0021129F /* SettingViewController.h */,
-				0A68FD241C33D5BB0021129F /* SettingViewController.m */,
+				0ADE21921C33DC0F00EA2D1F /* Customize Module */,
+				0ADE21931C33DC5700EA2D1F /* Default Module */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
