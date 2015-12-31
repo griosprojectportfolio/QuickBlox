@@ -24,6 +24,7 @@
     #import "AFNetworking.h"
     #import "ChatApi.h"
     #import "AppDelegate.h"
+    #import "UIColor+QB.h"
 
 #endif
 

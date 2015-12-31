@@ -34,6 +34,12 @@
 		0A68FD251C33D5BB0021129F /* FindFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A68FD201C33D5BB0021129F /* FindFriendViewController.m */; };
 		0A68FD261C33D5BB0021129F /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A68FD221C33D5BB0021129F /* RequestViewController.m */; };
 		0A68FD271C33D5BB0021129F /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A68FD241C33D5BB0021129F /* SettingViewController.m */; };
+		0A82F0981C34F581009A1D8F /* NSDate+QB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A82F0911C34F581009A1D8F /* NSDate+QB.m */; };
+		0A82F0991C34F581009A1D8F /* NSString+QB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A82F0931C34F581009A1D8F /* NSString+QB.m */; };
+		0A82F09A1C34F581009A1D8F /* UIColor+QB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A82F0951C34F581009A1D8F /* UIColor+QB.m */; };
+		0A82F09B1C34F581009A1D8F /* UIFont+QB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A82F0971C34F581009A1D8F /* UIFont+QB.m */; };
+		0A82F09E1C34FCC7009A1D8F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A82F09D1C34FCC7009A1D8F /* HomeViewController.m */; };
+		0A82F0A11C34FCEB009A1D8F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A82F0A01C34FCEB009A1D8F /* ProfileViewController.m */; };
 		0AEF6AC61C33C74400943498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AEF6AC41C33C74400943498 /* Main.storyboard */; };
 		1402B69A1B14BF350069E3A4 /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1402B6991B14BF350069E3A4 /* UserTableViewCell.m */; };
 		1402B69D1B14BFBA0069E3A4 /* CornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1402B69C1B14BFBA0069E3A4 /* CornerView.m */; };
@@ -130,6 +136,18 @@
 		0A68FD221C33D5BB0021129F /* RequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestViewController.m; path = UserModule/RequestViewController.m; sourceTree = "<group>"; };
 		0A68FD231C33D5BB0021129F /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingViewController.h; path = UserModule/SettingViewController.h; sourceTree = "<group>"; };
 		0A68FD241C33D5BB0021129F /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingViewController.m; path = UserModule/SettingViewController.m; sourceTree = "<group>"; };
+		0A82F0901C34F581009A1D8F /* NSDate+QB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+QB.h"; sourceTree = "<group>"; };
+		0A82F0911C34F581009A1D8F /* NSDate+QB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+QB.m"; sourceTree = "<group>"; };
+		0A82F0921C34F581009A1D8F /* NSString+QB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+QB.h"; sourceTree = "<group>"; };
+		0A82F0931C34F581009A1D8F /* NSString+QB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+QB.m"; sourceTree = "<group>"; };
+		0A82F0941C34F581009A1D8F /* UIColor+QB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+QB.h"; sourceTree = "<group>"; };
+		0A82F0951C34F581009A1D8F /* UIColor+QB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+QB.m"; sourceTree = "<group>"; };
+		0A82F0961C34F581009A1D8F /* UIFont+QB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+QB.h"; sourceTree = "<group>"; };
+		0A82F0971C34F581009A1D8F /* UIFont+QB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+QB.m"; sourceTree = "<group>"; };
+		0A82F09C1C34FCC7009A1D8F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		0A82F09D1C34FCC7009A1D8F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		0A82F09F1C34FCEB009A1D8F /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		0A82F0A01C34FCEB009A1D8F /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		0AEF6AC51C33C74400943498 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1299D4EB1DC1CC26B537E061 /* Pods.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.qa.xcconfig; path = "Pods/Target Support Files/Pods/Pods.qa.xcconfig"; sourceTree = "<group>"; };
 		1402B6981B14BF350069E3A4 /* UserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
@@ -341,6 +359,21 @@
 			path = Utils/Reachability;
 			sourceTree = "<group>";
 		};
+		0A82F08F1C34F581009A1D8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0A82F0901C34F581009A1D8F /* NSDate+QB.h */,
+				0A82F0911C34F581009A1D8F /* NSDate+QB.m */,
+				0A82F0921C34F581009A1D8F /* NSString+QB.h */,
+				0A82F0931C34F581009A1D8F /* NSString+QB.m */,
+				0A82F0941C34F581009A1D8F /* UIColor+QB.h */,
+				0A82F0951C34F581009A1D8F /* UIColor+QB.m */,
+				0A82F0961C34F581009A1D8F /* UIFont+QB.h */,
+				0A82F0971C34F581009A1D8F /* UIFont+QB.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		0ADE21921C33DC0F00EA2D1F /* Customize Module */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +387,10 @@
 				0A68FD221C33D5BB0021129F /* RequestViewController.m */,
 				0A68FD231C33D5BB0021129F /* SettingViewController.h */,
 				0A68FD241C33D5BB0021129F /* SettingViewController.m */,
+				0A82F09C1C34FCC7009A1D8F /* HomeViewController.h */,
+				0A82F09D1C34FCC7009A1D8F /* HomeViewController.m */,
+				0A82F09F1C34FCEB009A1D8F /* ProfileViewController.h */,
+				0A82F0A01C34FCEB009A1D8F /* ProfileViewController.m */,
 			);
 			name = "Customize Module";
 			sourceTree = "<group>";
@@ -395,6 +432,7 @@
 		86401C091B428CAD00D45A05 /* Utlities */ = {
 			isa = PBXGroup;
 			children = (
+				0A82F08F1C34F581009A1D8F /* Extensions */,
 				0A68FD1B1C33D4210021129F /* Reachability */,
 				0A68FCE01C33D2390021129F /* AFNetworking */,
 				0A68FCCE1C33D18D0021129F /* ChatApi */,
@@ -652,8 +690,10 @@
 				1402B69A1B14BF350069E3A4 /* UserTableViewCell.m in Sources */,
 				0A68FD151C33D2390021129F /* UIRefreshControl+AFNetworking.m in Sources */,
 				0A15085B1C31359A00EE45B3 /* UsersPaginator.m in Sources */,
+				0A82F0A11C34FCEB009A1D8F /* ProfileViewController.m in Sources */,
 				0A68FD0F1C33D2390021129F /* AFImageDownloader.m in Sources */,
 				BFE6FB86180E8EF100E64AC4 /* AppDelegate.m in Sources */,
+				0A82F0991C34F581009A1D8F /* NSString+QB.m in Sources */,
 				0A68FD0A1C33D2390021129F /* AFURLResponseSerialization.m in Sources */,
 				0A68FD111C33D2390021129F /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				86EE31B71B270B7F00B8A383 /* DialogInfoTableViewController.m in Sources */,
@@ -663,6 +703,7 @@
 				0A15087B1C31368F00EE45B3 /* Storage.m in Sources */,
 				0A68FCD81C33D18D0021129F /* ChatApi.m in Sources */,
 				0A15085A1C31359A00EE45B3 /* SignUpViewController.m in Sources */,
+				0A82F09A1C34F581009A1D8F /* UIColor+QB.m in Sources */,
 				8614B8E41B82060000DBB753 /* UIAlertDialog.m in Sources */,
 				0A1508811C31368F00EE45B3 /* UIImage+fixOrientation.m in Sources */,
 				1402B6A81B14C7340069E3A4 /* LoginViewController.m in Sources */,
@@ -679,13 +720,16 @@
 				1402B69D1B14BFBA0069E3A4 /* CornerView.m in Sources */,
 				0A68FD141C33D2390021129F /* UIProgressView+AFNetworking.m in Sources */,
 				0A1508781C31368F00EE45B3 /* NMPaginator.m in Sources */,
+				0A82F09E1C34FCC7009A1D8F /* HomeViewController.m in Sources */,
 				0A68FD271C33D5BB0021129F /* SettingViewController.m in Sources */,
 				0A68FD0E1C33D2390021129F /* AFAutoPurgingImageCache.m in Sources */,
 				0A68FD251C33D5BB0021129F /* FindFriendViewController.m in Sources */,
+				0A82F0981C34F581009A1D8F /* NSDate+QB.m in Sources */,
 				0A68FD091C33D2390021129F /* AFURLRequestSerialization.m in Sources */,
 				0A68FD0D1C33D2390021129F /* README.md in Sources */,
 				8614B8DD1B8205D400DBB753 /* UsersDataSource.m in Sources */,
 				0A68FD071C33D2390021129F /* AFNetworkReachabilityManager.m in Sources */,
+				0A82F09B1C34F581009A1D8F /* UIFont+QB.m in Sources */,
 				BFE6FBCE180EA2F300E64AC4 /* DialogsViewController.m in Sources */,
 				143181791B1882EC001A933D /* NewDialogTableViewController.m in Sources */,
 				1485D5FD1B25E60A00D26B2A /* EditDialogTableViewController.m in Sources */,

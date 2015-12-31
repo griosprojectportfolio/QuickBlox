@@ -46,6 +46,8 @@ NSString *const kAcconuntKey    = @"E6dM1TpyqRQGWR3KanjM";
     if (launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey]) {
         ServicesManager.instance.notificationService.pushDialogID = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey][kPushNotificationDialogIdentifierKey];
     }
+    [self setTableViewAppearance];
+    [self setNaviagtionAppearance];
     
     return YES;
 }
@@ -121,6 +123,24 @@ NSString *const kAcconuntKey    = @"E6dM1TpyqRQGWR3KanjM";
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Nvigation Apprence
+
+- (void) setNaviagtionAppearance {
+    [UINavigationBar appearance].barTintColor = [UIColor appNavigationBarTinColor];
+    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor whiteColor]}];
+}
+
+#pragma mark - Nvigation Apprence
+- (void) setTableViewAppearance {
+    [UITableView appearance].tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+    UIView *backgroundView = [[UIView alloc] initWithFrame:self.window.frame];
+    backgroundView.backgroundColor =
+    [UIColor colorWithPatternImage:
+     [UIImage imageNamed:@"Background"]];
+    [UITableView appearance].backgroundView = backgroundView;
 }
 
 #pragma mark - NotificationServiceDelegate protocol

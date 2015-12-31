@@ -37,6 +37,12 @@ static NSString *const kLastActivityDateKey = @"last_activity_date";
 static NSString *const kGoToDialogsSegueIdentifier = @"goToDialogs";
 
 /**
+ *  LoginTableViewController
+ */
+static NSString *const kGoToMainSegueIdentifier = @"goToMainDialogs";
+
+
+/**
  *  DialogsViewController
  */
 static const NSUInteger kDialogsPageLimit = 10;

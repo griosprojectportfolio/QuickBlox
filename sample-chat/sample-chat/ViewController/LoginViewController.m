@@ -118,7 +118,7 @@ static NSString *const kTestUsersDefaultPassword = @"qwertyuiop";//@"x6Bt0VDy5";
             [SVProgressHUD showSuccessWithStatus:@"Logged in"];
             [weakSelf registerForRemoteNotifications];
             __typeof(self) strongSelf = weakSelf;
-            [strongSelf performSegueWithIdentifier:kGoToDialogsSegueIdentifier sender:nil];
+            [strongSelf performSegueWithIdentifier:kGoToMainSegueIdentifier sender:nil];
         } else {
             [SVProgressHUD showErrorWithStatus:@"Can not login"];
         }
