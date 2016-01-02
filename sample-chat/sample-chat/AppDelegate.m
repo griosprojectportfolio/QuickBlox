@@ -140,7 +140,8 @@ NSString *const kAcconuntKey    = @"E6dM1TpyqRQGWR3KanjM";
     backgroundView.backgroundColor =
     [UIColor colorWithPatternImage:
      [UIImage imageNamed:@"Background"]];
-    [UITableView appearance].backgroundView = backgroundView;
+    [UITableView appearance].backgroundColor = [UIColor clearColor];
+    //[UITableView appearance].backgroundView = backgroundView;
 }
 
 #pragma mark - NotificationServiceDelegate protocol

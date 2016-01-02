@@ -40,6 +40,8 @@
 		0A82F09B1C34F581009A1D8F /* UIFont+QB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A82F0971C34F581009A1D8F /* UIFont+QB.m */; };
 		0A82F09E1C34FCC7009A1D8F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A82F09D1C34FCC7009A1D8F /* HomeViewController.m */; };
 		0A82F0A11C34FCEB009A1D8F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A82F0A01C34FCEB009A1D8F /* ProfileViewController.m */; };
+		0A82F0A61C3516C3009A1D8F /* HomeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A82F0A51C3516C3009A1D8F /* HomeViewCell.m */; };
+		0A82F0A91C3534D6009A1D8F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A82F0A81C3534D6009A1D8F /* DetailViewController.m */; };
 		0AEF6AC61C33C74400943498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AEF6AC41C33C74400943498 /* Main.storyboard */; };
 		1402B69A1B14BF350069E3A4 /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1402B6991B14BF350069E3A4 /* UserTableViewCell.m */; };
 		1402B69D1B14BFBA0069E3A4 /* CornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1402B69C1B14BFBA0069E3A4 /* CornerView.m */; };
@@ -148,6 +150,10 @@
 		0A82F09D1C34FCC7009A1D8F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		0A82F09F1C34FCEB009A1D8F /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		0A82F0A01C34FCEB009A1D8F /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		0A82F0A41C3516C3009A1D8F /* HomeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewCell.h; sourceTree = "<group>"; };
+		0A82F0A51C3516C3009A1D8F /* HomeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewCell.m; sourceTree = "<group>"; };
+		0A82F0A71C3534D6009A1D8F /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		0A82F0A81C3534D6009A1D8F /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		0AEF6AC51C33C74400943498 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1299D4EB1DC1CC26B537E061 /* Pods.qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.qa.xcconfig; path = "Pods/Target Support Files/Pods/Pods.qa.xcconfig"; sourceTree = "<group>"; };
 		1402B6981B14BF350069E3A4 /* UserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
@@ -374,6 +380,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		0A82F0A31C3516B1009A1D8F /* CustomizeModuleCell */ = {
+			isa = PBXGroup;
+			children = (
+				0A82F0A41C3516C3009A1D8F /* HomeViewCell.h */,
+				0A82F0A51C3516C3009A1D8F /* HomeViewCell.m */,
+			);
+			path = CustomizeModuleCell;
+			sourceTree = "<group>";
+		};
 		0ADE21921C33DC0F00EA2D1F /* Customize Module */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +404,8 @@
 				0A68FD241C33D5BB0021129F /* SettingViewController.m */,
 				0A82F09C1C34FCC7009A1D8F /* HomeViewController.h */,
 				0A82F09D1C34FCC7009A1D8F /* HomeViewController.m */,
+				0A82F0A71C3534D6009A1D8F /* DetailViewController.h */,
+				0A82F0A81C3534D6009A1D8F /* DetailViewController.m */,
 				0A82F09F1C34FCEB009A1D8F /* ProfileViewController.h */,
 				0A82F0A01C34FCEB009A1D8F /* ProfileViewController.m */,
 			);
@@ -530,6 +547,7 @@
 		BFE6FBC9180EA2F300E64AC4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				0A82F0A31C3516B1009A1D8F /* CustomizeModuleCell */,
 				0A15084F1C31359A00EE45B3 /* UserModule */,
 				0ADE21921C33DC0F00EA2D1F /* Customize Module */,
 				0ADE21931C33DC5700EA2D1F /* Default Module */,
@@ -697,6 +715,7 @@
 				0A68FD0A1C33D2390021129F /* AFURLResponseSerialization.m in Sources */,
 				0A68FD111C33D2390021129F /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				86EE31B71B270B7F00B8A383 /* DialogInfoTableViewController.m in Sources */,
+				0A82F0A61C3516C3009A1D8F /* HomeViewCell.m in Sources */,
 				1480E08F1B25DB6600DD6B7C /* DialogTableViewCell.m in Sources */,
 				0A68FD1E1C33D4210021129F /* Reachability.m in Sources */,
 				0A68FD131C33D2390021129F /* UIImageView+AFNetworking.m in Sources */,
@@ -720,6 +739,7 @@
 				1402B69D1B14BFBA0069E3A4 /* CornerView.m in Sources */,
 				0A68FD141C33D2390021129F /* UIProgressView+AFNetworking.m in Sources */,
 				0A1508781C31368F00EE45B3 /* NMPaginator.m in Sources */,
+				0A82F0A91C3534D6009A1D8F /* DetailViewController.m in Sources */,
 				0A82F09E1C34FCC7009A1D8F /* HomeViewController.m in Sources */,
 				0A68FD271C33D5BB0021129F /* SettingViewController.m in Sources */,
 				0A68FD0E1C33D2390021129F /* AFAutoPurgingImageCache.m in Sources */,

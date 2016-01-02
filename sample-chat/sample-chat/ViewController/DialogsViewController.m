@@ -58,6 +58,7 @@ QMChatConnectionDelegate
      }
      }];
      */
+    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

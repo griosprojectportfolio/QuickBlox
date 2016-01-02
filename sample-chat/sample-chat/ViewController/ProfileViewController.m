@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self applyDefault];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +25,25 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)applyDefault {
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background"]];
+    _arrData = [[NSArray alloc]initWithObjects:@"2,400 Post",@"124 Followers",@"23 Following",@"204 Favories", nil];
+    [self setLayer];
 }
-*/
+
+- (void)setLayer {
+    self.imgVWProfile.layer.cornerRadius = 60;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [_arrData count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cellObj = [tableView dequeueReusableCellWithIdentifier:@"ProfileCell"];
+    cellObj.textLabel.text = [self.arrData objectAtIndex:indexPath.row];
+    cellObj.textLabel.textColor = [UIColor whiteColor];
+    return cellObj;
+}
 
 @end

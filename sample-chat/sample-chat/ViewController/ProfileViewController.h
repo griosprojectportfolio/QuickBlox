@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProfileViewController : UIViewController
+@interface ProfileViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+
+@property(nonatomic,retain)IBOutlet UIImageView *imgVWProfile;
+@property(nonatomic,retain)IBOutlet UILabel *lblName;
+@property(nonatomic,retain)IBOutlet UILabel *lblMail;
+@property(nonatomic,retain)IBOutlet UILabel *lblAddress;
+@property(nonatomic,retain)IBOutlet UITableView *tblProfile;
+
+@property(nonatomic,retain) NSArray *arrData;
+
 
 @end
