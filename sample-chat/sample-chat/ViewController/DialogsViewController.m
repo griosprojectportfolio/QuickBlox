@@ -58,7 +58,7 @@ QMChatConnectionDelegate
      }
      }];
      */
-    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background"]];
+    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

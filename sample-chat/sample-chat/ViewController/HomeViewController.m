@@ -31,6 +31,16 @@
 - (void)applyDefault {
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background"]];
     [self setElementlayer];
+    self.imgVWDotFollowing.hidden = true;
+    self.imgVWDotGlobal.hidden = true;
+    self.imgVWDotTrending.hidden = true;
+    [self setDefaultBtnColor];
+}
+
+- (void)setDefaultBtnColor {
+    [self.btnGlobal setTitleColor:[UIColor appNavigationBarTinColor] forState:UIControlStateNormal];
+    [self.btnFollowing setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    [self.btnTrending setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
 }
 
 - (void)setElementlayer {
@@ -39,19 +49,20 @@
     self.imgVWDotTrending.layer.cornerRadius = 5;
 }
 
-
-
-
 - (IBAction)btnGlobalAction:(id)sender {
-    
+    [self setDefaultBtnColor];
 }
 
 - (IBAction)btnTrendingAction:(id)sender {
-    
+    [self.btnGlobal setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    [self.btnFollowing setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    [self.btnTrending setTitleColor:[UIColor appNavigationBarTinColor] forState:UIControlStateNormal];
 }
 
 - (IBAction)btnFollowingAction:(id)sender {
-    
+    [self.btnGlobal setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    [self.btnFollowing setTitleColor:[UIColor appNavigationBarTinColor] forState:UIControlStateNormal];
+    [self.btnTrending setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
 }
 
 #pragma mark - Table view delegates methods
